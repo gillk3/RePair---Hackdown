@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RePair - Student Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar" style="background:rgb(255, 255, 255, .8);">
+                <div class="nav-container">
+                    <div class="left-container">
+                    <ul class = "nav-left"> 
+                        <li class = "left" style="padding-top: 10px; color: black; border-radius: 10px; "><a href="./index.html"><img src="./images/logo.png" alt="cosmo watch logo"></a></li>
+                        
+                    </ul>
+                    </div>
+    
+                        <div class = "navbar2">
+    
+                            <ul  id = "nav-menu"> 
+                                <li class="nav-item"><a href="./about.html" class="nav-link" style=" color: black; border-radius: 10px; padding: 10px;">About Us</a></li>
+                                <li class="nav-item"><a href="./teacherform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Create Pairs</a></li>
+                                <li class="nav-item"><a href="./studentform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Student Form</a></li>
+                                <li class="nav-item"><a href="./results.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Results</a></li>
+                                <li class="nav-item"><a href="./team.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Meet the Team</a></li>
+                            </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        </div>
+    
+                </div>
+            </nav>
+        </header>
+
+    <div>
+        <h1 style="margin-top: 40px;">Student Form</h1>
+        <p style="font-size: 25px; width: 50%; margin-top: 10px;">Please fill out the form below to help your professor create groups. Keep in mind your responses will impact your team selection!</p>
+    </div>
+
+    <div class="container2">
+        <form>
+      
+            <label>Course</label>
+            <select id="size" name="size">
+                <!-- this will get pulled from database -->
+              <option value="two">Mr. Doe - CSC 345</option>
+              <option value="three">Mrs. Lane - CSC 415</option>
+              <option value="four">Mr. Sullivan - STA 215</option>
+            </select>
+
+            <label>Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Sally Joe">
+  
+            <label>Email</label>
+            <input type="text" id="email" name="firstname" placeholder="sallyjoe@gmail.com">
+
+            <p>Preferred Meeting Time</p>
+            <div style="text-align: left; margin:auto; width:200px; padding-top: 7px; font-size: 15px;">
+              <input type="checkbox" id="html" name="fav_language" value="1">
+              <label for="html">Morning/Afternoon</label><br>
+              <input type="checkbox" id="css" name="fav_language" value="2">
+              <label for="css">Afternoon/Night</label><br>
+            </div>
+
+            <br>
+            <br>
+
+            <label>Preferred Meeting Method</label>
+            <select id="social" name="social">
+              <option value="1">In-Person</option>
+              <option value="2">Remote</option>
+              <option value="3">No Preference</option>
+            </select>
+
+
+            <label>How outgoing are you?</label>
+            <select id="test" name="social">
+              <option value="1">Introverted</option>
+              <option value="2">Extroverted</option>
+            </select>
+
+            <label>What is your grade in this class?</label>
+            <select id="grade" name="social">
+              <option value="1">A: 90-100</option>
+              <option value="2">B: 80-90</option>
+              <option value="3">C: 70-80</option>
+              <option value="4">D: 60-70</option>
+              <option value="6">F: 60-Below</option>
+            </select>
+        
+  
+            <br>
+            <br>
+            <br>
+  
+            <input type="submit" id = "submit" value="Submit">
+        
+          </form>
+      </div>
+      </div>
+      <footer>
+        <p>RePair</p>
+        <a href="./team.html">Meet the Team!</a>    
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const navLink = document.querySelectorAll(".nav-link");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>

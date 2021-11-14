@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RePair - Teacher Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar" style="background:rgb(255, 255, 255, .8);">
+                <div class="nav-container">
+                    <div class="left-container">
+                    <ul class = "nav-left"> 
+                        <li class = "left" style="padding-top: 10px; color: black; border-radius: 10px; "><a href="./index.html"><img src="./images/logo.png" alt="cosmo watch logo"></a></li>
+                        
+                    </ul>
+                    </div>
+    
+                        <div class = "navbar2">
+    
+                            <ul  id = "nav-menu"> 
+                                <li class="nav-item"><a href="./about.html" class="nav-link" style=" color: black; border-radius: 10px; padding: 10px;">About Us</a></li>
+                                <li class="nav-item"><a href="./teacherform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Create Pairs</a></li>
+                                <li class="nav-item"><a href="./studentform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Student Form</a></li>
+                                <li class="nav-item"><a href="./results.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Results</a></li>
+                                <li class="nav-item"><a href="./team.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Meet the Team</a></li>
+                            </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        </div>
+    
+                </div>
+            </nav>
+        </header>
+
+    <div>
+        <h1 style="margin-top: 40px;" >Create Pairs</h1>
+        <p style="font-size: 25px; width: 50%; margin-top: 10px;">To create pairs within your class, please fill out the form below. </p>
+    </div>
+
+    <div class="container2">
+        <form name = "insert" action="test.php" method="POST">
+      
+          <label>Name</label>
+          <input type="text" id="fname" name="name" placeholder="Mr. Doe">
+
+          <label>Email</label>
+          <input type="text" id="email" name="email" placeholder="mrdoe@gmail.com">
+
+          <label>Course Title</label>
+          <input type="text" id="title" name="courseID" placeholder="Course title..">
+              
+
+
+        <label>Group Size (2-4)</label>
+          <select id="size" name="size">
+            <option value="two">2 Students</option>
+            <option value="three">3 Students</option>
+            <option value="four">4 Students</option>
+          </select>
+      
+
+          <br>
+          <br>
+          <br>
+
+          <input type="submit" id = "submit" value="Submit">
+      
+        </form>
+      </div>
+      </div>
+      <footer>
+        <p>RePair</p>
+        <a href="./team.html">Meet the Team!</a>    
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const navLink = document.querySelectorAll(".nav-link");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+    </script>
+
+</body>
+
+
+
+</html>

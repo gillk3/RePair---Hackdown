@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RePair - Meet the Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+  <div class="background2">
+    <header>
+        <nav class="navbar" style="background:rgb(255, 255, 255, .8);">
+            <div class="nav-container">
+                <div class="left-container">
+                <ul class = "nav-left"> 
+                    <li class = "left" style="padding-top: 10px; color: black; border-radius: 10px; "><a href="./index.html"><img src="./images/logo.png" alt="cosmo watch logo"></a></li>
+                    
+                </ul>
+                </div>
+
+                    <div class = "navbar2">
+
+                        <ul  id = "nav-menu"> 
+                            <li class="nav-item"><a href="./about.html" class="nav-link" style=" color: black; border-radius: 10px; padding: 10px;">About Us</a></li>
+                            <li class="nav-item"><a href="./teacherform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Create Pairs</a></li>
+                            <li class="nav-item"><a href="./studentform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Student Form</a></li>
+                            <li class="nav-item"><a href="./results.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Results</a></li>
+                            <li class="nav-item"><a href="./team.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Meet the Team</a></li>
+                        </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    </div>
+
+            </div>
+        </nav>
+    </header>
+  
+    <div class = "main-title2">
+        <h1 style="color:#091425; margin-top: 40px; font-size: 80px;">Meet the Team</h1>
+    </div>
+    </div>
+
+
+
+        <div class = "info">
+
+            <div class="row">
+                <div class="column" style="background: #CCCCCC;">
+                <img src="./images/kiera.png" alt="Avatar" style="border-radius: 50%; height: 150px; width: 150px;">
+                 <h2 style="color:#091425;">Kiera Gill</h2>
+                 <p style="color:#091425; font-size: 20px;">Kiera is a junior Computer Science major at TCNJ. Fun fact: she loves to ski.</p>
+                </div>
+                <div class="column" style="background: #d3d3d3;">
+                    <img src="./images/sean.png" alt="Avatar" style="border-radius: 50%; height: 150px; width: 150px;">
+                 <h2 style="color:#091425;">Sean Elefant</h2>
+                 <p style="color:#091425; font-size: 20px;">Sean is a junior Computer Science major at TCNJ. In his free time, he likes to cook.</p>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="column" style="background: #d3d3d3;">
+                    <img src="./images/john.png" alt="Avatar" style="border-radius: 50%; height: 150px; width: 150px;">
+                 <h2 style="color:#091425;">Johnny O'Brien</h2>
+                 <p style="color:#091425; font-size: 20px;">Johnny is a junior Computer Science major at TCNJ. Johnny is very witty. </p>
+                </div>
+                <div class="column" style="background: #CCCCCC;">
+                    <img src="./images/nicole.png" alt="Avatar" style="border-radius: 50%; height: 150px; width: 150px;">
+                 <h2 style="color:#091425;">Nicole Kercado</h2>
+                 <p style="color:#091425; font-size: 20px;">Nicole is a junior Computer Science major at TCNJ. In her free time, she loves to workout and meal prep.</p>
+                </div>
+              </div>
+
+        </div>
+
+
+
+      </div>
+      <footer>
+        <p>RePair</p>
+        <a href="./team.html">Meet the Team!</a>   
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const navLink = document.querySelectorAll(".nav-link");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+    </script>
+</body>
+
+</html>

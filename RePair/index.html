@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RePair - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class="background">
+    <header>
+        <nav class="navbar" style="background:rgb(255, 255, 255, .8);">
+            <div class="nav-container">
+                <div class="left-container">
+                <ul class = "nav-left"> 
+                    <li class = "left" style="padding-top: 10px; color: black; border-radius: 10px; "><a href="./index.html"><img src="./images/logo.png" alt="cosmo watch logo"></a></li>
+                    
+                </ul>
+                </div>
+
+                    <div class = "navbar2">
+
+                    <ul  id = "nav-menu"> 
+                        <li class="nav-item"><a href="./about.html" class="nav-link" style=" color: black; border-radius: 10px; padding: 10px;">About Us</a></li>
+                        <li class="nav-item"><a href="./teacherform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Create Pairs</a></li>
+                        <li class="nav-item"><a href="./studentform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Student Form</a></li>
+                        <li class="nav-item"><a href="./results.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Results</a></li>
+                        <li class="nav-item"><a href="./team.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Meet the Team</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    </div>
+
+            </div>
+        </nav>
+    </header>
+
+            <div class = "main-title">
+                <h2>RePair</h2>
+                <p style="width: 45%; background: rgb(255,255,255,.8); color: black; border-radius: 20px; padding: 10px;">An intuitive group assignment program developed by students with the intention of producing well-balanced teams for school projects.</p>
+            </div>
+    </div>
+
+
+            <div class = "info2">
+                <h1>Welcome!</h1>
+                <p></p>
+                <p>All too often, Professors will assign groups for projects/labs without giving any thought to the types of students in their class.  This situation can potentially pair students that do not work well together, therefore leading to complications with completing the assigned project/lab.  With RePair's intuitive design, Professors can get an overview of the kinds of students in their classroom and receive auto-generated group recommendations based on type of students in their classroom.</p>
+            </div>
+
+
+            <br>
+            <br>
+            <div class = "info">
+                <h2>How to get started:</h2>
+                <div class="row6">
+                    <div class="column1" style="background: #d3d3d3;">
+                     <h2 style="color:#091425;"><em>Teachers:</em></h2>
+                     <p style="color:#091425;">First, navigate to the 'Create Pairs' page, and you will be instructed to fill out a form with details about
+                        your course and project group specifications. Once you hit submit, urge your students to fill out the student form. Once
+                        your class has filled out the form, you can view the suggested pairings on the 'Results' page by entering your 
+                        email.</p>
+                        <br>
+                        <br>
+                    <a href="./teacherform.html">Create Pairs</a>
+                    </div>
+                    <div class="column4" style="background: #CCCCCC;">
+                     <h2 style="color:#091425;"><em>Students:</em></h2>
+                     <p style="color:#091425;">Be sure to fill out the student form once your professor provides the link. Complete the form to 
+                        the best of your abilities, and keep in mind your responses will impact your group member pairing.
+                        Please try and be as accurate as possible, and make sure to select your Professor's course in the dropdown menu.</p>
+                        <br>
+                        <br>
+                        <a href="./studentform.html">Student Form</a>
+                    </div>
+
+                  </div>
+
+
+
+                <!-- <p style="font-size: 22px;"><em>Teachers:</em></p>
+                <p>First, navigate to the 'Create Pairs' page, and you will be instructed to fill out a form with details about
+                    your course and project group specifications. Once you hit submit, urge your students to fill out the student form. Once
+                    your class has filled out the form, you can view the suggested pairings on the 'Results' page by entering your 
+                    email. 
+                </p>
+
+                    <br>
+                        <a href="./teacherform.html">Create Pairs</a>
+                    <br>
+
+                <br>
+                <p style="font-size: 22px;"><em>Students:</em></p>
+                <p>Be sure to fill out the student form once your professor provides the link. Complete the form to 
+                    the best of your abilities, and keep in mind your responses will impact your group member pairing.
+                    Please try and be as accurate as possible, and make sure to select your Professor's course in the dropdown menu.
+                </p>
+
+                <br>
+                <a href="./studentform.html">Student Form</a>
+                <br> -->
+            </div>
+
+
+
+        </div>
+
+
+
+    <footer>
+        <p>RePair</p>
+        <a href="./team.html">Meet the Team!</a>  
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const navLink = document.querySelectorAll(".nav-link");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+    </script>
+
+</body>
+
+
+</html>

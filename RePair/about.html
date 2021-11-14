@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RePair - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+        <nav class="navbar" style="background:rgb(255, 255, 255, .8);">
+            <div class="nav-container">
+                <div class="left-container">
+                <ul class = "nav-left"> 
+                    <li class = "left" style="padding-top: 10px; color: black; border-radius: 10px; "><a href="./index.html"><img src="./images/logo.png" alt="cosmo watch logo"></a></li>
+                    
+                </ul>
+                </div>
+
+                    <div class = "navbar2">
+
+                        <ul  id = "nav-menu"> 
+                            <li class="nav-item"><a href="./about.html" class="nav-link" style=" color: black; border-radius: 10px; padding: 10px;">About Us</a></li>
+                            <li class="nav-item"><a href="./teacherform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Create Pairs</a></li>
+                            <li class="nav-item"><a href="./studentform.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Student Form</a></li>
+                            <li class="nav-item"><a href="./results.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Results</a></li>
+                            <li class="nav-item"><a href="./team.html" class="nav-link" style="color: black; border-radius: 10px; padding: 10px;">Meet the Team</a></li>
+                        </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    </div>
+
+            </div>
+        </nav>
+    </header>
+  
+    <div>
+        <h1 style="margin-top: 40px;">About RePair</h1>
+        <p style="font-size: 25px; width: 50%; margin-top: 10px;">Our goal is to reduce the stress students experience when tasked with forming their own group for projects.</p>
+    </div>
+
+
+        <div class = "info">
+
+            <div class="row9">
+                <div class="column9" style="background: #CCCCCC;">
+                 <h2 style="color:#091425;">Why use RePair?</h2>
+                 <p style="color:#091425;">RePair is an intuitive group-assignment program developed by students with the intention of producing well-balanced teams for school projects.</p>
+                </div>
+                <div class="column9" style="background: #d3d3d3;">
+                 <h2 style="color:#091425;">Eveyone wins!</h2>
+                 <p style="color:#091425;">RePair is beneficial to both the students AND their teachers, and levels the playing field for group projects by promoting an inclusive environment for students. In creating teams, RePair considers factors such as classmate current grade, preferred meeting time/location, basic strengths, and more!</p>
+                </div>
+              </div>
+              <div class="row9">
+                <div class="column9" style="background: #d3d3d3;">
+                 <h2 style="color:#091425;">Teachers</h2>
+                 <p style="color:#091425;">Teachers don't need to take time and randomly assign groups, and can spend more time managing other important tasks. Addiitonally, their students will perform better.</p>
+                </div>
+                <div class="column9" style="background: #CCCCCC;">
+                 <h2 style="color:#091425;">Students</h2>
+                 <p style="color:#091425;">Students don't have to deal with the stress of finding a partner and/or feeling excluded. Also, students are more likely to perform better in their project because they are satisfied with their group.</p>
+                </div>
+              </div>
+
+
+        </div>
+
+
+
+      </div>
+      <footer>
+        <p>RePair</p>
+        <a href="./team.html">Meet the Team!</a>   
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("#nav-menu");
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+
+            const navLink = document.querySelectorAll(".nav-link");
+        }
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+    </script>
+</body>
+
+</html>

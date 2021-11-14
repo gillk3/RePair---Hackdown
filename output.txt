@@ -1,0 +1,19 @@
+
+Groups Assigned according to Class Grade:
+
+Virtual and in Good Standing:
+Group 1: Nicole Kercado & Emanuel Smith.
+Group 2: Chris McKeever & Nikith Fernando.
+Group 3: Taylor Jackson & Sean Elefant.
+
+Virtual and in Bad Standing:
+Group 1: John Doe.
+
+In-Person and in Good Standing:
+Group 1: John O'Brien & Kiera Gill.
+Group 2: Michael Marmolejos & John DeCroce.
+Group 3: Alexis Maul & Victoria Ruggiero.
+
+In-Person and in Bad Standing:
+Group 1: Roman Rychkov.
+
